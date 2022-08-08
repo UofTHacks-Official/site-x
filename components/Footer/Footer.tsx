@@ -5,6 +5,7 @@ const Footer = () => {
         <div className="footer">
             <Link href='/'><a>Action</a></Link>
             <Link href='/'><a>Action</a></Link>
+            <Link href='/'><a>Action</a></Link>
         </div>
     );
 }
