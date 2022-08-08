@@ -1,0 +1,29 @@
+.site-footer{
+    position: fixed;
+    left: 0;
+    bottom:0%;
+    width: 100%;
+    color:black;
+    text-align: left;
+
+}
+
+.site-footer a{
+    font-size: 1vw;
+    margin-left: 5vw; margin-right: 5vw; margin-top: 5vh;
+}
+.button-style{
+    margin-right: 5vw !important;
+}
+.wrapper{
+    position: fixed;
+    font-family: "Proxima Nova";
+    background-color: #f9f9f9;
+    font-weight: normal !important;
+    height:auto;
+    margin: 0;
+    bottom:0%;
+    padding: 0;
+    padding-top: 2rem;
+    overflow: hidden;
+}
