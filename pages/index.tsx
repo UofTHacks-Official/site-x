@@ -13,7 +13,10 @@ export default function Home() {
         <link rel='icon' href='/uofthacks.ico' />
       </Head>
       
-      <Footer></Footer>
+      <div className={styles.footer}>
+        <Footer></Footer>
+      </div>
+     
     </div>
   );
 }
