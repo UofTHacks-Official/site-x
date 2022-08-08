@@ -6,7 +6,7 @@ const Footer = () => {
         <div className= "wrapper">
             <button className='button-style'><Link href='/'><a>Action</a></Link></button>
             <button className='button-style'><Link href='/'><a>Action</a></Link></button>
-            <button className='button-style'><Link href='/'><a>Action</a></Link></button>
+            <button><Link href='/'><a>Action</a></Link></button>
         </div>  
     );
 }
