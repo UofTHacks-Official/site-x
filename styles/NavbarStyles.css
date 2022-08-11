@@ -1,7 +1,7 @@
 .nav-bar {
-    display: flex;
-    height: 10vh;
-  }
+  display: flex;
+  height: 10vh;
+}
   
 .nav-bar a {
   font-size: 1vw;
