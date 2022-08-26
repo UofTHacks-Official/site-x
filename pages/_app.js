@@ -1,5 +1,5 @@
 import '../styles/globals.css';
-import '../styles/footerStyle.css';
+//import '../styles/footerStyle.css';
 import '../styles/Home.module.css';
 import '../styles/NavbarStyles.css';
 
