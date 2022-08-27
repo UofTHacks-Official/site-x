@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css';
 import Footer from '../components/Footer/Footer';
 import React from 'react';
 import Navbar from '../components/NavBar/Navbar';
+import Banner from '../components/Banner/Banner';
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
         <link rel='icon' href='/uofthacks.ico' />
       </Head>
       <Navbar/>
-      
+      <Banner/>
       <div className={styles.footer}>
         <Footer></Footer>
       </div>

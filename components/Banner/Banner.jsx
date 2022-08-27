@@ -1,29 +1,22 @@
+import { styled } from '../../stitches.config';
+import Image from 'next/image';
+import MLHBanner from '../../assets/MLH_Banner.svg';
+
+const MLHBannerWrapper = styled('div', {
+    position: 'absolute',
+    left: '90.74%',
+    right: '4.06%',
+    top: '0%',
+    bottom: '93.51%',
+    pointerEvents: 'none'
+});
+
 const Banner = () => {
     return (
-        <div className="mlh-banner">
-            <div className="mlh-banner__background-top"/>
-            <div className="mlh-banner__logo">
-                <span className="hlt-banner__logo-m">
-                </span>
-                <span className="hlt-banner__logo-l">
-                </span>
-                <span className="hlt-banner__logo-h">
-                </span>
-            </div>
-            <div className="mlh-banner__official-plate">
-                
-            </div>
-            <div className="mlh-banner__year">
-
-            </div>
-            <div className="mlh-banner__season">
-
-            </div>
-            <div className="mlh-banner__season">
-
-            </div>
-            <div className="mlh-banner__background-bottom"/>
-        </div>
+        <MLHBannerWrapper>
+            {/* Width is temporary */}
+            <Image src={MLHBanner} width="99.91px"/> 
+        </MLHBannerWrapper>
     );
 }
 
