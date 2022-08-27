@@ -1,11 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { styled } from '../../stitches.config';
-import UofTHacksLogo from '../../assets/uofthacks-logo.svg';
+import UofTHacksLogo from '../../assets/UofTHacks_Logo.svg';
 
 const NavBar = styled('div', {
     display: 'flex',
-    height: '10vh'
+    height: '10vh',
+    color: '#fff'
 });
 
 const LinkWrapper = styled('span', {
