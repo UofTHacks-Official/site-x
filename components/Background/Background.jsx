@@ -6,19 +6,19 @@ const BackgroundWrapper = styled('div', {
     position: 'absolute',
     top: '0',
     left: '0',
-    width: 'max-content',
-    height: 'max-content',
+    width: '100%',
+    height: '100%',
     pointerEvents: 'none',
     background: 'rgba(13, 13, 13, 0.91)',
     zIndex: '-1'
 });
 
-const Background = () => {
+const Background = (props) => {
     return (
         <>
-            <BackgroundWrapper>
+            <BackgroundWrapper css={{height:`${props.height}`}}>
                 {/* Width is temporary */}
-                <Image src={VectorLights} /> 
+                <Image src={VectorLights} layout="fill" objectFit='cover'/> 
             </BackgroundWrapper>
         </>
     );
