@@ -4,11 +4,11 @@ import Footer from '../components/Footer/Footer';
 import React from 'react';
 import Navbar from '../components/NavBar/Navbar';
 import Banner from '../components/Banner/Banner';
+import Background from '../components/Background/Background';
 
 const HomeWrapper = styled('div', {
   padding: '0 2rem',
   minHeight: '100vh',
-  background: '#0D0D0D',
 });
 
 const FooterWrapper = styled('div', {
@@ -35,6 +35,7 @@ export default function Home() {
         <link rel='icon' href='/uofthacks.ico' />
       </Head>
       <Navbar/>
+      <Background/>
       <Banner/>
       <FooterWrapper>
         <Footer/>
