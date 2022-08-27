@@ -9,7 +9,7 @@ const BackgroundWrapper = styled('div', {
     width: '100%',
     height: '100%',
     pointerEvents: 'none',
-    background: 'rgba(13, 13, 13, 0.91)',
+    background: '#0D0D0D',
     zIndex: '-1'
 });
 
