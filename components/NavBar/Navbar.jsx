@@ -1,16 +1,50 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import UofTHacksLogo from '../../assets/uofthacks-logo.svg';
+import { styled } from '../../stitches.config';
+import UofTHacksLogo from '../../assets/UofTHacks_Logo.svg';
+
+const NavBar = styled('div', {
+    display: 'flex',
+    height: '10vh',
+    color: '#fff'
+});
+
+const LinkWrapper = styled('span', {
+    fontSize: '1vw',
+    margin: '5vh 5vw 0 5vw'
+});
+
+const NavLogoWrapper = styled('span', {
+    pointerEvents: 'none'
+});
+
+const NavLink = (props) => {
+    return (
+        <LinkWrapper>
+            <Link href={props.href}>
+                <a>{props.children}</a>
+            </Link>
+        </LinkWrapper>
+    );
+}
+
+const NavLogo = (props) => {
+    return (
+        <NavLogoWrapper>
+            <Image src={props.src} width={props.width} height={props.height} layout="fixed" alt=""/>
+        </NavLogoWrapper>
+    );
+}
 
 const Navbar = () => {
     return (
-        <div className="nav-bar">
-            <Image src={UofTHacksLogo} width="100" height="100" layout="fixed" alt=""/>
-            <Link href='/'><a>Action</a></Link>
-            <Link href='/'><a>Action</a></Link>
-            <Link href='/'><a>Action</a></Link>
-            <Link href='/'><a>Action</a></Link>
-        </div>
+        <NavBar>
+            <NavLogo src={UofTHacksLogo} width="100" height="100" />
+            <NavLink href='/'>Action</NavLink>
+            <NavLink href='/'>Action</NavLink>
+            <NavLink href='/'>Action</NavLink>
+            <NavLink href='/'>Action</NavLink>
+        </NavBar>
     );
 }
 
