@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { styled } from '../../stitches.config';
+import { styled } from '../../stitches.config.ts';
 import UofTHacksLogo from '../../assets/UofTHacks_Logo.svg';
 
 const NavBar = styled('div', {

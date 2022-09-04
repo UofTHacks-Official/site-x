@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { styled } from '../stitches.config';
+import { styled } from '../stitches.config.ts';
 import React from 'react';
 import Background from '../components/Background/Background';
 import Navbar from '../components/NavBar/Navbar';
