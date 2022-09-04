@@ -8,6 +8,9 @@ export const { styled, getCssText } = createStitches({
     colors: {
       hiContrast: 'hsl(206,10%,5%)',
       loContrast: 'white',
+      blue: 'royalblue',
+      orange: 'orange',
+      white: 'white',
     },
     fontSizes: {
       1: '13px',
