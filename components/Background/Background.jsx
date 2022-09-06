@@ -1,4 +1,4 @@
-import { styled } from '../../stitches.config';
+import { styled } from '../../stitches.config.ts';
 import Image from 'next/image';
 import VectorLights from '../../assets/Vector_Lights.svg';
 
