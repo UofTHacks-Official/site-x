@@ -4,7 +4,7 @@ import { styled } from '../../stitches.config.ts';
 import UofTHacksLogo from '../../assets/UofTHacks_Logo.svg';
 
 const NavBar = styled('div', {
-    display: 'flex',
+    display: 'none',
     height: '10vh',
     color: '#fff'
 });
