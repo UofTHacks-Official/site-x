@@ -2,14 +2,13 @@ import { styled } from "@stitches/react";
 
 const HeroSubTitle = styled('p', {
     position: 'absolute',
-    width: '707px',
     height: '93px',
-    left: 'calc(50% - 707px/2 - 361.5px)',
+    left: '10%',
     top: '217px',
 
     fontStyle: 'normal',
     fontWeight: '450',
-    fontSize: '25px',
+    fontSize: 'min(4vw, 1.5rem)',
     lineHeight: '37px',
     display: 'flex',
     alignItems: 'flex-end',
@@ -22,14 +21,13 @@ const HeroSubTitle = styled('p', {
 
 const HeroDisplay = styled('div', {
     position: 'absolute',
-    width: '562px',
     height: '92px',
-    left: 'calc(50% - 562px/2 - 434px)',
+    left: '10%',
     top: '326px',
 
     fontStyle: 'normal',
     fontWeight: '500',
-    fontSize: '76.29px',
+    fontSize: 'min(11vw, 5rem)',
     lineHeight: '96px',
     display: 'flex',
     alignItems: 'flex-end',
@@ -41,14 +39,13 @@ const HeroDisplay = styled('div', {
 
 const HeroSponsorText = styled('p', {
     position: 'absolute',
-    width: '418px',
     height: '94px',
-    left: '245.23px',
+    left: '12%',
     top: '438px',
 
     fontStyle: 'normal',
     fontWeight: '350',
-    fontSize: '20px',
+    fontSize: 'min(4vw, 1.5rem)',
     lineHeight: '29px',
     color: '#fff',
     textDecorationLine: 'underline',

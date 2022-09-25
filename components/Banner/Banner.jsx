@@ -4,18 +4,18 @@ import MLHBanner from '../../assets/MLH_Banner.svg';
 
 const MLHBannerWrapper = styled('div', {
     position: 'absolute',
-    left: '90.74%',
-    right: '4.06%',
-    top: '0%',
-    bottom: '93.51%',
+    display: 'flex',
+    flexDirection: 'column',
+    width: '8%',
+    minWidth: '5rem',
+    right: '5%', 
     pointerEvents: 'none'
 });
 
 const Banner = () => {
     return (
         <MLHBannerWrapper>
-            {/* Width is temporary */}
-            <Image src={MLHBanner} width="99.91px"/> 
+            <Image src={MLHBanner} layout="responsive"/> 
         </MLHBannerWrapper>
     );
 }
