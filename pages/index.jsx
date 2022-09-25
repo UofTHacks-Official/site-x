@@ -7,15 +7,13 @@ import Banner from '../components/Banner/Banner';
 import Hero from '../components/Hero/Hero';
 import Footer from '../components/Footer/Footer';
 import About from '../components/About/About';
+import Sponsors from '../components/Sponsors/Sponsors';
 
 const HomeWrapper = styled('div', {
-  padding: '0 2rem'
+  padding: '0 2rem',
 });
 
 const FooterWrapper = styled('div', {
-  display: 'flex',
-  flex: '1',
-  padding: '2rem 0',
   borderTop: '1px solid #eaeaea',
   justifyContent: 'center',
   alignItems: 'center',
@@ -27,8 +25,15 @@ const FooterWrapper = styled('div', {
   }
 });
 
+const Contents = styled('div', {
+  display: 'inline-flex',
+  flexDirection: 'column',
+  paddingTop: '20vh',
+  gap: '10vh',
+});
+
 export default function Home() {
-  const homeHeight = '160vh';
+  const homeHeight = '250vh';
   return (
     <HomeWrapper css={{height:`${homeHeight}`}}>
       <Head>
@@ -40,8 +45,12 @@ export default function Home() {
       <Background height={homeHeight}/>
       <Navbar/>
       <Banner/>
-      <Hero/>
-      <About/>
+
+      <Contents>
+        <Hero/>
+        <About/>
+        <Sponsors/>
+      </Contents>
       <FooterWrapper>
         <Footer/>
       </FooterWrapper>
