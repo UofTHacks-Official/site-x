@@ -8,6 +8,7 @@ const AboutWrapper = styled("div", {
   top: "60%",
   pointerEvents: "none",
 });
+
 const AboutTitleColor = styled("color", {
   color: "$orange",
 });
