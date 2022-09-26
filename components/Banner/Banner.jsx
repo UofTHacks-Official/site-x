@@ -4,10 +4,9 @@ import MLHBanner from '../../assets/MLH_Banner.svg';
 
 const MLHBannerWrapper = styled('div', {
     position: 'absolute',
-    display: 'flex',
-    flexDirection: 'column',
     width: '8%',
     minWidth: '5rem',
+    maxWidth: '8rem',
     right: '5%', 
     pointerEvents: 'none'
 });
