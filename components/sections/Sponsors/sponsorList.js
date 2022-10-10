@@ -13,7 +13,7 @@ export const sponsors = {
   diamond: [
     {
       name: 'Protocol Labs',
-      url: 'https://www.protocol.ai/',
+      url: 'https://protocol.ai/',
       img: Protocol,
     },
   ],
