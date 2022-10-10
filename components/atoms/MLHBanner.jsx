@@ -12,6 +12,13 @@ const MLH = styled('a', css({
   zIndex:"10000"
 }));
 
+const Wrapper = styled('svg', css({
+  width: "100%",
+  height: "100%",
+  backgroundRepeat: "no-repeat",
+  backgroundImage: "url('https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-blue.svg')",
+}))
+
 
 export const MLHBanner = (props) => {
   return (
@@ -20,11 +27,7 @@ export const MLHBanner = (props) => {
       href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2023-season&utm_content=blue" 
       target="_blank"
     >
-      <img 
-        src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-blue.svg" 
-        alt="Major League Hacking 2023 Hackathon Season" 
-        style={{width:"100%"}} 
-      />
+      <Wrapper />
     </MLH>
   )
 }
