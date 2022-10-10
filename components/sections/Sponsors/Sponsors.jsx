@@ -147,7 +147,7 @@ const DiamondTier = (props) => {
 
 const Sponsor = (props) => {
   return(
-    <SponsorWrapper href={props.link} target="_blank" rel="noopener">
+    <SponsorWrapper href={props.href} target="_blank" rel="noopener">
       <Image src={props.src} layout="fill"
                 objectFit="contain" alt={props.name}  />
     </SponsorWrapper>
