@@ -57,7 +57,7 @@ export const About = (props) => {
       <ContentWrapper>
         <TextWrapper>
           <Body>
-          Canada's first student-run hackathon, UofTHacks, is back for its 10th consecutive year on January 20-22, 2023!
+          Canada&apos;s first student-run hackathon, UofTHacks, is back for its 10th consecutive year on January 20-22, 2023!
           </Body>
           <Body>
           To celebrate this milestone, we will be even bigger and better than ever before! Over 600 innovators, developers, designers, and entrepreneurs will participate in a 36-hour competition entirely in-person, where they will build unique and impactful projects.
@@ -67,7 +67,7 @@ export const About = (props) => {
           </Body>
         </TextWrapper>
         <ImageWrapper>
-          <Image src={AboutUsImg} layout="fill" objectFit='contain' />
+          <Image src={AboutUsImg} layout="fill" objectFit='contain' alt="UofTHacks Friends" />
         </ImageWrapper>
       </ContentWrapper>
     </Wrapper>
