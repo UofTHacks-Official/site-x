@@ -18,11 +18,11 @@ export const sponsors = {
     },
   ],
   platinum: [
-    {
-      name: 'Cohere',
-      url: 'https://cohere.ai/',
-      img: Cohere,
-    },
+    // {
+    //   name: 'Cohere',
+    //   url: 'https://cohere.ai/',
+    //   img: Cohere,
+    // },
   ],
   gold: [
     {
