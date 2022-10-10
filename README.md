@@ -2,12 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-### Installing the necessary software
-**1.** Install npm ```sudo apt-get install npm```\
-**2.** Install npx ```sudo npm i -g npx```\
-**3.** Install npm packages ```npm install```
-
-#### Run the development server:
+First, run the development server:
 
 ```bash
 npm run dev
