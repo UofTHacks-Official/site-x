@@ -29,32 +29,20 @@ jobs:
     - run: git config --global user.email "${EMAIL}"
     - run: git config --global user.name "GitHub Actions Automation"
     - uses: actions/checkout@v2
+    - run: echo "GURL=$(git remote get-url origin)">>$GITHUB_ENV
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install
-    - run: npm run build --if-present
+    - run: npm run export --if-present
     - run: |
         #Pushing the developed code onto the main repo
-        cd ..
-        git clone --no-checkout https://github.com/UofTHacks-Official/main-site.git main-push
-        
-        #Checking out the repo and switching branches
-        cd main-push
-        switch="!f() { git checkout $1 2>/dev/null || git checkout -b $1; }; f"
-        git switch ${GITHUB_REF#refs/heads/}
-        
-        #Changing to the repo current repo
-        cd ..
-        cd ${{ github.event.repository.name }}
-        cp -r ./.next ../main-push
-        cp -r ./public ../main-push
-        cp ./package.json ../main-push
-        cp ./package-lock.json ../main-push
-        cd ../main-push
-        #Committing and pushing
-        git add -A
+        cd out
+        git init 
+        git add .
         git commit -m "🔨 ${{ github.event.repository.name }} build | ${{ steps.date.outputs.date }} 🔨"
-        git push
+        git remote add origin $GURL
+        git checkout gh_pages
+        git push --force --set-upstream origin gh_pages
