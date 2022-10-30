@@ -10,12 +10,17 @@ const Wrapper = styled('section', css({
     textDecoration: "none",
     border: "2px solid #eaeaea",
     borderRadius: "10px",
-    height: "300px",
-    width: "25rem"
+    minHeight: "350px",
+    maxWidth: "70%",
+    width: "25rem",
+    transition: "all 0.3s ease 0s",
+    "&:hover": {
+      transform: "scale(1.05)",
+    }
 }));
 
 const Title = styled('div', css({
-    fontFamily: "Proxima Nova",
+    fontFamily: "Filson Pro",
     fontWeight: "bold",
     color: "#000000",
     margin: "0 0 1rem 0",
@@ -23,12 +28,12 @@ const Title = styled('div', css({
 }));
 
 const Paragraph = styled('div', css({
-    fontFamily: "Proxima Nova",
+    fontFamily: "Filson Pro",
     fontWeight: "normal",
     color: "#FFFFFF",
     margin: "0",
     fontSize: "1,1rem",
-    lineHeight: "1.5"
+    lineHeight: "1.5",
 }))
 
 
