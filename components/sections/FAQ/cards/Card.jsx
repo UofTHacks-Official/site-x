@@ -8,7 +8,8 @@ const Wrapper = styled('section', css({
     textAlign: "left",
     color: "#000000",
     textDecoration: "none",
-    border: "2px solid #eaeaea",
+    // border: "2px solid #eaeaea",
+    backgroundColor: "$tertiary",
     borderRadius: "10px",
     minHeight: "350px",
     maxWidth: "70%",
@@ -22,15 +23,15 @@ const Wrapper = styled('section', css({
 const Title = styled('div', css({
     fontFamily: "Filson Pro",
     fontWeight: "bold",
-    color: "#000000",
+    color: "$alternate-text",
     margin: "0 0 1rem 0",
     fontSize: "1.3rem"
 }));
 
 const Paragraph = styled('div', css({
-    fontFamily: "Filson Pro",
+    fontFamily: "$poppins",
     fontWeight: "normal",
-    color: "#FFFFFF",
+    color: "$alternate-text",
     margin: "0",
     fontSize: "1,1rem",
     lineHeight: "1.5",

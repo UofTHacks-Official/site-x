@@ -22,7 +22,7 @@ const FAQs = styled('section', css({
     padding: "5rem 0",
     margin: "0",
     borderRadius: "10px",
-    background:"linear-gradient(101.99deg, rgba(249, 249, 249, 0.5) 5.49%, rgba(249, 249, 249, 0.3) 100%)"
+    // background:"linear-gradient(101.99deg, rgba(249, 249, 249, 0.5) 5.49%, rgba(249, 249, 249, 0.3) 100%)"
 }));
 
 // const FAQList = styled('div', css({
@@ -60,7 +60,7 @@ const FAQ = (props) => {
         paragraph={
             <span>
                 Our policy will reflect the&nbsp; 
-                <a href="https://www.utoronto.ca/utogether/covid-19-planning-update">University of Toronto’s</a> 
+                <a href="https://www.utoronto.ca/utogether/covid-19-planning-update">University of Toronto&#39;s</a> 
                 &nbsp;COVID protocols. The focus will be to ensure the event is a safe environment for all participants. 
                 We will have hand sanitizer stations, masks and disinfectant wipes throughout the venue.
             </span>
@@ -71,12 +71,12 @@ const FAQ = (props) => {
         title="I still have a question..."
         paragraph={
           <span>
-            We’d be happy to help! You can send us a direct message on&nbsp; 
+            We&#39;d be happy to help! You can send us a direct message on&nbsp; 
             <a href="https://www.instagram.com/uofthacks/?hl=en">Instagram</a>
             &nbsp;or <a href="https://twitter.com/uofthacks?lang=en">Twitter</a>&nbsp; - @uofthacks. 
             Alternatively, you can send the inquiry over to&nbsp;
             <a href="mailto:official@uofthacks.ca">official@uofthacks.ca</a>
-            &nbsp;and we’ll get back to you as soon as possible.
+            &nbsp;and we&#39;ll get back to you as soon as possible.
           </span>
         }
       />
