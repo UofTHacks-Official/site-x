@@ -8,6 +8,7 @@ import FDMGroup from '@assets/Sponsors/FDM.svg';
 import Voiceflow from '@assets/Sponsors/Voiceflow.png';
 import XYZ from '@assets/Sponsors/XYZ.svg';
 import AMD from '@assets/Sponsors/AMD.svg';
+import Ubisoft from '@assets/Sponsors/Ubisoft.svg';
 
 export const sponsors = {
   diamond: [
@@ -29,6 +30,11 @@ export const sponsors = {
       name: 'Accenture',
       url: 'https://www.accenture.com/',
       img: Accenture,
+    },
+    {
+      name: 'Ubisoft',
+      url: 'https://www.ubisoft.com/',
+      img: Ubisoft,
     },
     {
       name: 'University of Toronto Department of Computer Science',
