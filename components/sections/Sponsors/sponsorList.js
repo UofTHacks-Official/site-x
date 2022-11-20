@@ -9,6 +9,7 @@ import Voiceflow from '@assets/Sponsors/Voiceflow.png';
 import XYZ from '@assets/Sponsors/XYZ.svg';
 import AMD from '@assets/Sponsors/AMD.svg';
 import Ubisoft from '@assets/Sponsors/Ubisoft.svg';
+import EngSoc from '@assets/Sponsors/EngSoc.svg';
 import IBM from '@assets/Sponsors/IBM.svg';
 
 export const sponsors = {
@@ -33,10 +34,15 @@ export const sponsors = {
       img: Accenture,
     },
     {
-      name: 'Ubisoft',
-      url: 'https://www.ubisoft.com/',
-      img: Ubisoft,
+      name: 'EngSoc',
+      url: 'https://skule.ca/',
+      img: EngSoc,
     },
+    // {
+    //   name: 'Ubisoft',
+    //   url: 'https://www.ubisoft.com/',
+    //   img: Ubisoft,
+    // },  
     {
       name: 'University of Toronto Department of Computer Science',
       url: 'https://web.cs.toronto.edu/',
