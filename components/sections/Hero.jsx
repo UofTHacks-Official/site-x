@@ -1,5 +1,8 @@
 import { styled, css } from "~stitches";
-import { Subtitle, DisplayText, Body } from "@components/atoms";
+import Image from 'next/image';
+import Link from 'next/link';
+import { Subtitle, DisplayText, Body} from "@components/atoms";
+import applyButton from '../../public/img/apply_now.svg'
 
 const Wrapper = styled('div', {
   display: "flex",
@@ -7,6 +10,9 @@ const Wrapper = styled('div', {
   flexDirection: "column",
   minHeight: "100vh",
   width: "100%",
+})
+const CursorActive = styled('div', {
+  cursor: "pointer"
 })
 
 export const Hero = (props) => {
@@ -21,6 +27,13 @@ export const Hero = (props) => {
         </span>
       </Subtitle>
       <DisplayText>UofTHacks X</DisplayText>
+      <Link href='http://my.uofthacks.com/register'>
+        <CursorActive>
+        <Image src={applyButton}
+        alt='apply now button'
+        ></Image>
+        </CursorActive>
+      </Link>
       <Body><a href='mailto:sponsors@uofthacks.com' style={{color: "#ffff", "textDecoration": "underline"}}>Interested in sponsoring?</a></Body>
     </Wrapper>
   )
