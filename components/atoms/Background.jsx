@@ -1,9 +1,9 @@
 import { styled } from "~stitches";
 
 const image = {
-  starWithLights: "url('/img/bg/StarsWithLights.svg'), #0D0D0D",
-  starsOnly: "url('/img/bg/StarsOnly.svg'), #0D0D0D",
-  lightsOnly: "url('/img/bg/LightsOnly.svg'), #0D0D0D",
+  starWithLights: "url('/img/bg/StarsWithLights.svg') #0D0D0D no-repeat fixed",
+  starsOnly: "url('/img/bg/StarsOnly.svg'), #0D0D0D no-repeat fixed",
+  lightsOnly: "url('/img/bg/LightsOnly.svg'), #0D0D0D no-repeat fixed",
 }
 
 const vectors = {
@@ -14,9 +14,6 @@ const Wrapper = styled("div", {
   minWidth: '100%',
   minHeight: '100%',
   margin: "0",
-  backgroundRepeat: "repeat",
-  backgroundAttachment: "cover",
-  backgroundSize: "cover",
   variants: {
     bg: {
       main: {
