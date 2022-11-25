@@ -79,5 +79,6 @@ export const globalStyles = globalCss({
     color: '$primary-text',
     margin: 0,
     padding: 0,
+    scrollBehavior: 'smooth',
   },
 });

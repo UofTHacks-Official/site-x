@@ -1,9 +1,9 @@
 import { styled } from "~stitches";
 
 const image = {
-  starWithLights: "url('/img/bg/StarsWithLights.svg') #0D0D0D no-repeat fixed",
-  starsOnly: "url('/img/bg/StarsOnly.svg'), #0D0D0D no-repeat fixed",
-  lightsOnly: "url('/img/bg/LightsOnly.svg'), #0D0D0D no-repeat fixed",
+  starWithLights: "url('/img/bg/StarsWithLights.svg') no-repeat fixed",
+  starsOnly: "url('/img/bg/StarsOnly.svg') #0D0D0D repeat",
+  lightsOnly: "url('/img/bg/LightsOnly.svg') no-repeat fixed",
 }
 
 const vectors = {
@@ -17,16 +17,20 @@ const Wrapper = styled("div", {
   variants: {
     bg: {
       main: {
-        background: image.starWithLights
+        background: image.lightsOnly
       },
       starsOnly: {
-        background: image.starsOnly,
+        background: '#0D0D0D',
       }
     },
   },
   defaultVariants: {
     bg: "main"
   }
+})
+
+const StarsWrapper = styled("div", {
+  background: image.starsOnly
 })
 
 const Padding = styled("main", {
@@ -53,10 +57,12 @@ const ArtWrapper = styled("div", {
  */
 export const MainBackground = (props) => {
   return (
-    <Wrapper>
-      <ArtWrapper></ArtWrapper>
-      {props.padded ? <Padding>{props.children}</Padding> : props.children}
-    </Wrapper>
+    <StarsWrapper>
+      <Wrapper>
+        <ArtWrapper></ArtWrapper>
+        {props.padded ? <Padding>{props.children}</Padding> : props.children}
+      </Wrapper>
+    </StarsWrapper>
   )
 }
 
