@@ -5,7 +5,7 @@ import Protocol from '@assets/Sponsors/protocol-labs.svg';
 import Cohere from '@assets/Sponsors/cohere.svg';
 import echo3D from '@assets/Sponsors/echo3D.webp';
 import FDMGroup from '@assets/Sponsors/FDM.svg';
-import Voiceflow from '@assets/Sponsors/Voiceflow.png';
+import Voiceflow from '@assets/Sponsors/Voiceflow.webp';
 import XYZ from '@assets/Sponsors/XYZ.svg';
 import AMD from '@assets/Sponsors/AMD.svg';
 import Ubisoft from '@assets/Sponsors/Ubisoft.svg';

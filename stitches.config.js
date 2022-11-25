@@ -1,8 +1,8 @@
-import FilsonProMediumOtf from './stitches/fonts/FilsonProMedium.otf';
-import FilsonProMediumWoff from './stitches/fonts/FilsonProMedium.woff';
-import FilsonProMediumWoff2 from './stitches/fonts/FilsonProMedium.woff2';
-import PoppinsRegular from './stitches/fonts/Poppins-Regular.ttf';
-import PoppinsMedium from './stitches/fonts/Poppins-Medium.ttf';
+import FilsonProMediumOtf from './public/fonts/FilsonProMedium.otf';
+import FilsonProMediumWoff from './public/fonts/FilsonProMedium.woff';
+import FilsonProMediumWoff2 from './public/fonts/FilsonProMedium.woff2';
+import PoppinsRegular from './public/fonts/Poppins-Regular.ttf';
+import PoppinsMedium from './public/fonts/Poppins-Medium.ttf';
 
 import { createStitches } from '@stitches/react';
 
@@ -46,21 +46,29 @@ const fonts = {
   },
 };
 
-export const { config, createTheme, css, globalCss, styled, theme, keyframes } =
-  createStitches({
-    theme: {
-      colors,
-      fonts: {
-        system: systemFont,
-        filsonPro: `${fonts.filsonPro.name}, ${systemFont}`,
-        poppins: `${fonts.poppins.name}, ${systemFont}`,
-      },
-      fontSizes,
+export const {
+  config,
+  createTheme,
+  css,
+  globalCss,
+  styled,
+  theme,
+  keyframes,
+  getCssText,
+} = createStitches({
+  theme: {
+    colors,
+    fonts: {
+      system: systemFont,
+      filsonPro: `${fonts.filsonPro.name}, ${systemFont}`,
+      poppins: `${fonts.poppins.name}, ${systemFont}`,
     },
-    media: {
-      bp1: '(max-width: 1330px)',
-    },
-  });
+    fontSizes,
+  },
+  media: {
+    bp1: '(max-width: 1330px)',
+  },
+});
 
 export const darkTheme = createTheme('dark', {});
 

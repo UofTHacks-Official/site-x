@@ -3,7 +3,7 @@ import { styled, css } from "~stitches";
 
 import { Body, Title } from "@components/atoms";
 
-import AboutUsImg from "@assets/AboutUs.png";
+import AboutUsImg from "@assets/AboutUs.webp";
 
 const Wrapper = styled('section', {
   minHeight: "100vh",
