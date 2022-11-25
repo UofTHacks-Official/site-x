@@ -13,6 +13,10 @@ const nextConfig = {
     });
     return config;
   },
+  images: {
+    loader: 'akamai',
+    path: '',
+  },
 };
 
 module.exports = nextConfig;
