@@ -13,9 +13,6 @@ const nextConfig = {
     });
     return config;
   },
-  images: {
-    domains: ['s3.amazonaws.com'],
-  },
 };
 
 module.exports = nextConfig;

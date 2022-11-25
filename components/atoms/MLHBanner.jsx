@@ -16,7 +16,7 @@ const Wrapper = styled('svg', css({
   width: "100%",
   height: "100%",
   backgroundRepeat: "no-repeat",
-  backgroundImage: "url('https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-blue.svg')",
+  backgroundImage: "url('/img/mlh.svg')",
 }))
 
 
