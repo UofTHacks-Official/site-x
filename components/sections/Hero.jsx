@@ -1,5 +1,5 @@
 import { styled, css } from "~stitches";
-import { Subtitle, DisplayText, Body } from "@components/atoms";
+import { Subtitle, DisplayText, Body, ApplyButton } from "@components/atoms";
 
 const Wrapper = styled('div', {
   display: "flex",
@@ -7,6 +7,7 @@ const Wrapper = styled('div', {
   flexDirection: "column",
   minHeight: "100vh",
   width: "100%",
+  zIndex: "10",
 })
 
 export const Hero = (props) => {
@@ -21,6 +22,8 @@ export const Hero = (props) => {
         </span>
       </Subtitle>
       <DisplayText>UofTHacks X</DisplayText>
+      <Body size="large">Hacker applications are now open! <span style ={{fontSize: "1rem"}}>(Deadline is Dec 16th, 2022.)</span></Body>
+      <ApplyButton />
       <Body><a href='mailto:sponsors@uofthacks.com' style={{color: "#ffff", "textDecoration": "underline"}}>Interested in sponsoring?</a></Body>
     </Wrapper>
   )
