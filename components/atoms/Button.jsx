@@ -61,6 +61,6 @@ export const ApplyButton = (props) => {
   }));
 
   return (
-    <StyledApply href="https://my.uofthacks.com/register">Apply Now →</StyledApply>
+    <StyledApply href="https://apply.uofthacks.com/register">Apply Now →</StyledApply>
   );
 };
