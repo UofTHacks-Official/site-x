@@ -11,6 +11,7 @@ const vectors = {
 }
 
 const Wrapper = styled("div", {
+  zIndex: "-1",
   minWidth: '100%',
   minHeight: '100%',
   margin: "0",
@@ -105,12 +106,12 @@ export const MainBackground = (props) => {
   return (
     <StarsWrapper>
       <Wrapper>
+        {props.padded ? <Padding>{props.children}</Padding> : props.children}
         <TopLeftGlow />
         <TopRightGlow />
         <BottomLeftGlow />
         <BottomRightGlow />
         <ArtWrapper></ArtWrapper>
-        {props.padded ? <Padding>{props.children}</Padding> : props.children}
       </Wrapper>
     </StarsWrapper>
   )
