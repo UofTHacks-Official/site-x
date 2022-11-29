@@ -75,7 +75,7 @@ const FAQ = (props) => {
             <a href="https://www.instagram.com/uofthacks/?hl=en">Instagram</a>
             &nbsp;or <a href="https://twitter.com/uofthacks?lang=en">Twitter</a>&nbsp; - @uofthacks. 
             Alternatively, you can send the inquiry over to&nbsp;
-            <a href="mailto:official@uofthacks.ca">official@uofthacks.ca</a>
+            <a href="mailto:official@uofthacks.com">official@uofthacks.com</a>
             &nbsp;and we&#39;ll get back to you as soon as possible.
           </span>
         }
