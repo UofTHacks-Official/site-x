@@ -84,7 +84,7 @@ const FAQ = (props) => {
   );
 
   return (
-    <Margin>
+    <Margin id="FAQ">
       <Title align="center">FAQs</Title>
       <Wrapper>
         <div id="faq">

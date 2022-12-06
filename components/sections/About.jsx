@@ -52,7 +52,7 @@ const TextWrapper = styled('div', css({
 
 export const About = (props) => {
   return(
-    <Wrapper>
+    <Wrapper id="About">
       <Title>About Us</Title>
       <ContentWrapper>
         <TextWrapper>

@@ -158,7 +158,7 @@ const Sponsor = (props) => {
 export const Sponsors = (props) => {
 
   return(
-    <Wrapper>
+    <Wrapper id="Sponsors">
       <Title align="center">Sponsors</Title>
       <SponsorsGrid>
         <DiamondTier />
