@@ -11,8 +11,9 @@ const Wrapper = styled("navbar", css({
     height: "80px",
     background: "rgba(13, 13, 13, 0.9)",
     zIndex:"10000",
-    border:'1px solid',
-    borderColor:'rgba(223, 125, 125, 1)'
+    borderBottom:'1px solid',
+    borderImageSource:"linear-gradient(91.6deg, #DF7D7D 6.77%, #B487EE 57.81%, #5EA7D5 88.54%)",
+    borderImageSlice: 1,
 }));
 
 const Links = styled("div", css({
@@ -33,7 +34,7 @@ const LogoDiv = styled("div", ({
   position: 'absolute',
   width: '80px',
   height: '80px',
-  left: '180px',
+  left: '10%',
   top: '0px',
 }));
 
