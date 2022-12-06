@@ -1,6 +1,6 @@
 import { styled, css } from "~stitches";
 
-import { Footer } from "@components/molecules";
+import { Footer, Navbar } from "@components/molecules";
 
 export const Layout = (props) => {
 
