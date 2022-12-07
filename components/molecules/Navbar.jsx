@@ -46,7 +46,7 @@ export const Navbar = (props) => {
       </LogoDiv>
       <Links>
         <Link href="https://forms.gle/2AjFu2TzLVFSoDPo7">Mentor</Link>
-        <Link href="">Volunteer</Link>
+        {/* <Link href="">Volunteer</Link> */}
         <Link href="#About">About</Link>
         <Link href="#Sponsors">Sponsors</Link>
         <Link href="#FAQ">FAQ</Link>
