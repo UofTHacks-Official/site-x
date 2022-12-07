@@ -45,7 +45,7 @@ export const Navbar = (props) => {
         <Image src={Logo} alt='official logo'></Image>
       </LogoDiv>
       <Links>
-        <Link href="">Mentor</Link>
+        <Link href="https://forms.gle/2AjFu2TzLVFSoDPo7">Mentor</Link>
         <Link href="">Volunteer</Link>
         <Link href="#About">About</Link>
         <Link href="#Sponsors">Sponsors</Link>
