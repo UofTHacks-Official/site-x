@@ -47,9 +47,9 @@ export const Navbar = (props) => {
       <Links>
         <Link href="https://forms.gle/2AjFu2TzLVFSoDPo7">Mentor</Link>
         {/* <Link href="">Volunteer</Link> */}
-        <a href="#About">About</a>
-        <a href="#Sponsors">Sponsors</a>
-        <a href="#FAQ">FAQ</a>
+        <Link href="#About" target="_self">About</Link>
+        <Link href="#Sponsors" target="_self">Sponsors</Link>
+        <Link href="#FAQ" target="_self">FAQ</Link>
       </Links>
     </Wrapper>
   );

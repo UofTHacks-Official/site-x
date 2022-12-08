@@ -137,6 +137,6 @@ export const Link = (props) => {
   }))
 
   return (
-    <StyledLink href={props.href} target={"_blank"}>{props.children}</StyledLink>
+    <StyledLink href={props.href} target={props.target ?? "_blank"}>{props.children}</StyledLink>
   )
 }
