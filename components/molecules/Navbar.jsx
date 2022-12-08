@@ -9,7 +9,7 @@ const Wrapper = styled("navbar", css({
     width: "100%",
     boxSizing: "border-box",
     height: "80px",
-    background: "rgba(13, 13, 13, 0.9)",
+    background: "rgb(13, 13, 13)",
     zIndex:"10000",
     borderBottom:'1px solid',
     borderImageSource:"linear-gradient(91.6deg, #DF7D7D 6.77%, #B487EE 57.81%, #5EA7D5 88.54%)",
