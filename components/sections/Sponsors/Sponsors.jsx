@@ -6,6 +6,7 @@ import { sponsors } from "./sponsorList";
 const Wrapper = styled('section', {
   minHeight: "100vh",
   width: "100%",
+  scrollMarginTop: "4vh",
 })
 
 const SponsorsGrid = styled('div', css({

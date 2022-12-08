@@ -5,6 +5,7 @@ import { Title } from "@components/atoms";
 
 const Margin = styled('section', css({
   margin: "30rem 0 20rem 0",
+  scrollMarginTop: "8vh",
 }));
 
 const Wrapper = styled('section', css({
