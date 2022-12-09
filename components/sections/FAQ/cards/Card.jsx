@@ -11,7 +11,7 @@ const Wrapper = styled('section', css({
     // border: "2px solid #eaeaea",
     backgroundColor: "$tertiary",
     borderRadius: "10px",
-    minHeight: "350px",
+    minHeight: "250px",
     maxWidth: "70%",
     width: "25rem",
     transition: "all 0.3s ease 0s",
