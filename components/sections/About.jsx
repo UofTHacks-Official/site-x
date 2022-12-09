@@ -8,7 +8,7 @@ import AboutUsImg from "@assets/AboutUs.webp";
 const Wrapper = styled('section', {
   minHeight: "100vh",
   width: "100%",
-  scrollMarginTop: "8vh",
+  scrollMarginTop: "12vh",
 })
 
 const ContentWrapper = styled('div', css({
