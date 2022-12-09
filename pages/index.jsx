@@ -4,6 +4,7 @@ import { MainBackground,  MLHBanner} from '@components/atoms';
 import { Layout, Navbar} from '@components/molecules';
 import { Hero, About, Sponsors } from '@components/sections';
 import FAQ from '@components/sections/FAQ/FAQ';
+import { BrowserView } from 'react-device-detect';
 
 
 export default function Home() {
@@ -46,7 +47,9 @@ export default function Home() {
             content="https://i.ibb.co/HNkxDpW/SEO-Photo.png"
           />
       <Navbar />
+      <BrowserView>
       <MLHBanner />
+      </BrowserView>
       <MainBackground padded>
         <Layout>
             <Hero />
