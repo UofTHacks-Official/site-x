@@ -55,7 +55,7 @@ const LogoDiv = styled("div", ({
 
 const HamburgerWrapper = styled("div", ({
   position: 'absolute',
-  right: '10%',
+  right: '124px',
   top: '15px',
 }));
 
@@ -78,7 +78,6 @@ export const Navbar = (props) => {
       <BrowserView>
         <Links id="links">
           <Link href="https://forms.gle/2AjFu2TzLVFSoDPo7">Mentor</Link>
-          {/* <Link href="">Volunteer</Link> */}
           <Link href="#About" target="_self">About</Link>
           <Link href="#Sponsors" target="_self">Sponsors</Link>
           <Link href="#FAQ" target="_self">FAQ</Link>
@@ -90,7 +89,6 @@ export const Navbar = (props) => {
         </HamburgerWrapper>
         <LinksMobile id='mobile-links'>
           <Link href="https://forms.gle/2AjFu2TzLVFSoDPo7">Mentor</Link>
-          {/* <Link href="">Volunteer</Link> */}
           <Link href="#About" target="_self">About</Link>
           <Link href="#Sponsors" target="_self">Sponsors</Link>
           <Link href="#FAQ" target="_self">FAQ</Link>

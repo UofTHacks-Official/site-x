@@ -47,9 +47,7 @@ export default function Home() {
             content="https://i.ibb.co/HNkxDpW/SEO-Photo.png"
           />
       <Navbar />
-      <BrowserView>
       <MLHBanner />
-      </BrowserView>
       <MainBackground padded>
         <Layout>
             <Hero />
