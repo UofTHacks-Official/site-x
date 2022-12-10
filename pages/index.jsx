@@ -1,9 +1,10 @@
 import React from 'react';
 
 import { MainBackground,  MLHBanner} from '@components/atoms';
-import { Layout } from '@components/molecules';
+import { Layout, Navbar} from '@components/molecules';
 import { Hero, About, Sponsors } from '@components/sections';
 import FAQ from '@components/sections/FAQ/FAQ';
+import { BrowserView } from 'react-device-detect';
 
 
 export default function Home() {
@@ -45,6 +46,7 @@ export default function Home() {
             property="twitter:image"
             content="https://i.ibb.co/HNkxDpW/SEO-Photo.png"
           />
+      <Navbar />
       <MLHBanner />
       <MainBackground padded>
         <Layout>

@@ -5,6 +5,7 @@ import { Title } from "@components/atoms";
 
 const Margin = styled('section', css({
   margin: "30rem 0 20rem 0",
+  scrollMarginTop: "12vh",
 }));
 
 const Wrapper = styled('section', css({
@@ -84,7 +85,7 @@ const FAQ = (props) => {
   );
 
   return (
-    <Margin>
+    <Margin id="FAQ">
       <Title align="center">FAQs</Title>
       <Wrapper>
         <div id="faq">

@@ -13,7 +13,11 @@
   },
   {
     "question": "Can I attend if I live far away?",
-    "answer": "Yes, as long as you registered with UofTHacks, you are more than welcome to attend! However, all participants are responsible for getting themselves to the event and bringing their own personal essentials for overnight stay. We will have designated spaces at the venue for hackers to rest and sleep. Unfortunately, we will not be providing any travel reimbursements. Please note: If you will be attending from outside of Canada, you need to ensure you are following the Government of Canada’s travel policies. Please contact us by sending a direct message on Instagram, Twitter, or at official@uofthacks.com for more information."
+    "answer": "Yes, as long as you registered with UofTHacks, you are more than welcome to attend! However, all participants are responsible for getting themselves to the event and bringing their own personal essentials for overnight stay. We will have designated spaces at the venue for hackers to rest and sleep."
+  },
+  {
+    "question": "Are there travel reimbursements?",
+    "answer": "Unfortunately, we will not be providing any travel reimbursements. Please note: If you will be attending from outside of Canada, you need to ensure you are following the Government of Canada’s travel policies. Please contact us by sending a direct message on Instagram, Twitter, or at official@uofthacks.com for more information."
   },
   {
     "question": "Can I join virtually?",
@@ -36,7 +40,11 @@
     "answer": "Not at all — UofTHacks is a perfect opportunity to learn something new! Throughout the event we’ll have tons of workshops to help you get set up. We’ll also have mentors floating around to help out whenever you need it!"
   },
   {
-    "question": "Can I work on my project before the event?",
-    "answer": "No. To ensure fairness, and integrity, all work on your project must be done during the event. All submitted projects must link their repository and will be verified manually. Any projects that violate our rules will be disqualified from judging."
+    "question": "What do Mentors do?",
+    "answer": "At UofTHacks, mentors are excited individuals who want to share technical knowledge and experiences with hackers! This includes providing guidance, mentorship in their future careers, help on their projects and more!"
+  },
+  {
+    "question": "What are the Requirements to be a Mentor?",
+    "answer": "At UofTHacks, a mentor is a working professional who has had experience in the tech industry. Mentors must be 18+, and have technical knowledge. Previous internship experience is not necessary, but is definitely considered a bonus!"
   }
 ]
