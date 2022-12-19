@@ -39,7 +39,7 @@ const LinksMobile = styled("div", ({
   width: "100%",
   display: "none",
   gap: "10px",
-  bottom: "20px",
+  top: "60px",
 }));
 
 const LogoDiv = styled("div", ({
@@ -62,7 +62,7 @@ const HamburgerWrapper = styled("div", ({
 export const Navbar = (props) => {
   function changeNavBar(toggled) {
     if (toggled) {
-      document.getElementById("navbar").style.height = '220px';
+      document.getElementById("navbar").style.height = '250px';
       document.getElementById("mobile-links").style.display = 'flex';
     } else {
       document.getElementById("navbar").style.height = '80px';
