@@ -78,6 +78,7 @@ export const Navbar = (props) => {
       <BrowserView>
         <Links id="links">
           <Link href="https://forms.gle/2AjFu2TzLVFSoDPo7">Mentor</Link>
+          <Link href="https://forms.gle/cXhzrzDgrGD83arR8">Volunteer</Link>
           <Link href="#About" target="_self">About</Link>
           <Link href="#Sponsors" target="_self">Sponsors</Link>
           <Link href="#FAQ" target="_self">FAQ</Link>
@@ -89,6 +90,7 @@ export const Navbar = (props) => {
         </HamburgerWrapper>
         <LinksMobile id='mobile-links'>
           <Link href="https://forms.gle/2AjFu2TzLVFSoDPo7">Mentor</Link>
+          <Link href="https://forms.gle/cXhzrzDgrGD83arR8">Volunteer</Link>
           <Link href="#About" target="_self">About</Link>
           <Link href="#Sponsors" target="_self">Sponsors</Link>
           <Link href="#FAQ" target="_self">FAQ</Link>
