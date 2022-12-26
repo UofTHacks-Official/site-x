@@ -67,6 +67,7 @@ export const {
   },
   media: {
     bp1: '(max-width: 1330px)',
+    bp800: '(max-width: 800px)',
   },
 });
 
