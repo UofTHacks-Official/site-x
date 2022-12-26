@@ -70,7 +70,7 @@ const Stats = (props) => {
 
   return (
     <Wrapper>
-      <Header>Last Year's Stats</Header>
+      <Header>Last Year&apos;s Stats</Header>
       <Container>
         <Stat>
           <Top>600+</Top>
