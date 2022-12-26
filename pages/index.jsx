@@ -5,6 +5,7 @@ import { Layout, Navbar} from '@components/molecules';
 import { Hero, About, Sponsors } from '@components/sections';
 import FAQ from '@components/sections/FAQ/FAQ';
 import { BrowserView } from 'react-device-detect';
+import Stats from '@components/sections/Stats';
 
 
 export default function Home() {
@@ -52,6 +53,7 @@ export default function Home() {
         <Layout>
             <Hero />
             <About />
+            <Stats />
             <Sponsors />
             <FAQ/>
         </Layout>
