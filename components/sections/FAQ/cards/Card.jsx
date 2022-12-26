@@ -1,49 +1,62 @@
-import React from "react";
+import { Subtitle, Body } from "@components/atoms";
+import React, {useState} from "react";
 import {styled, css} from "~stitches";
 
-const Wrapper = styled('section', css({
+const Wrapper = styled('div', css({
     display: "block",
-    margin: "1rem",
-    padding: "1.5rem",
+    padding: "4px 20px",
     textAlign: "left",
-    color: "#000000",
     textDecoration: "none",
-    // border: "2px solid #eaeaea",
-    backgroundColor: "$tertiary",
-    borderRadius: "10px",
-    minHeight: "250px",
-    maxWidth: "70%",
-    width: "25rem",
+    backgroundColor: "#171717",
+    height: "fit-content",
     transition: "all 0.3s ease 0s",
-    "&:hover": {
-      transform: "scale(1.05)",
-    }
 }));
 
-const Title = styled('div', css({
-    fontFamily: "Filson Pro",
-    fontWeight: "bold",
-    color: "$alternate-text",
-    margin: "0 0 1rem 0",
-    fontSize: "1.3rem"
+const WrapperBorder = styled('div', css({
+  padding: "1px",
+  maxWidth: "35.168rem",
+  border: "1px solid transparent",
+    backgroundImage: "linear-gradient(91.6deg, #DF7D7D 6.77%, #B487EE 57.81%, #5EA7D5 88.54%);",
+      backgroundOrigin: "border-box",
+      backgroundClip: "padding-box, border-box",
+      overflow: "hidden",
 }));
 
-const Paragraph = styled('div', css({
-    fontFamily: "$poppins",
-    fontWeight: "normal",
-    color: "$alternate-text",
-    margin: "0",
-    fontSize: "1,1rem",
-    lineHeight: "1.5",
+const Top = styled('div', css({
+  display: "flex",
+  justifyContent: "space-between",
+  gap: "20px",
+  alignItems: "center",
+  cursor: "pointer",
+}));
+
+const Sign = styled('p', css({
+  color: "#F9F9F9",
+  fontSize: "30px",
+  margin: "0",
 }))
 
+const Content = styled('div', css({
+  overflow: "hidden",
+  transition: "all 0.3s ease",
+}))
 
 const Card = (props) => {
+  const [clicked, setClicked] = useState(false);
   return (
-    <Wrapper>
-      <Title>{props.title}</Title>
-      <Paragraph>{props.paragraph}</Paragraph>
-    </Wrapper>
+    <div>
+      <WrapperBorder>
+        <Wrapper>
+          <Top onClick={() => setClicked(!clicked)}>
+            <Subtitle>{props.title}</Subtitle>
+            <Sign>{clicked ? "-": "+"}</Sign>
+          </Top>
+          <Content style={{"maxHeight": (clicked ? "1000px": "0px")}}>
+            <Body>{props.paragraph}</Body>
+          </Content>
+        </Wrapper>
+      </WrapperBorder>
+    </div>
   );
 };
 
