@@ -62,7 +62,8 @@ export const Title = (props) => {
 export const Header = (props) => {
   
   const StyledHeader = styled(props.type || "h1", css({
-    color: props.color == null ? "$primary-text" : props.color,
+    color: props.color == null ? "$tertiary" : props.color,
+    textAlign: props.align == null ? "left": props.align,
     variants: {
       type: {
         h1: {...h1Styles},
@@ -104,6 +105,7 @@ export const Body = (props) => {
     fontWeight: "400",
     color: "$primary-text",
     lineHeight: "30px",
+    textAlign: props.align == null ? null : props.align,
     variants: {
       size: {
         body: {...bodyStyles},
@@ -112,7 +114,7 @@ export const Body = (props) => {
       }
     },
     defaultVariants: {
-      type: 'body'
+      size: 'body'
     }
   }));
 
@@ -126,17 +128,31 @@ export const Link = (props) => {
   const StyledLink = styled("a", css({
     fontFamily: "$poppins",
     fontWeight: "500",
-    color: "$primary-text",
+    color: props.color == null ? "$primary-text" : props.color,
     textDecoration: "none",
     cursor: "pointer",
     transition: "0.3s ease-out all",
     "&:hover": {
-      color: "$secondary-text",
+      color: props.hoverColor == null ? "$secondary-text" : props.hoverColor,
       transition: "0.3s ease-out all",
+    },
+    variants: {
+      type: {
+        blue: {
+          color: "$primary",
+          "&:hover": {
+            color: "#296187",
+          },
+        },
+        blueThin: {
+          color: "$primary",
+          fontWeight: "400",
+        }
+      },
     }
   }))
 
   return (
-    <StyledLink href={props.href} target={props.target ?? "_blank"}>{props.children}</StyledLink>
+    <StyledLink type={props.type} href={props.href} target={props.target ?? "_blank"} color={props.color} hoverColor={props.hoverColor}>{props.children}</StyledLink>
   )
 }
