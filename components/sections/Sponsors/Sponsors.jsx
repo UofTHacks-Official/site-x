@@ -1,4 +1,4 @@
-import { Title } from "@components/atoms";
+import { Header, Title } from "@components/atoms";
 import Image from "next/image";
 import {styled, css} from "~stitches";
 import { sponsors } from "./sponsorList";
@@ -160,7 +160,7 @@ export const Sponsors = (props) => {
 
   return(
     <Wrapper id="Sponsors">
-      <Title align="center">Sponsors</Title>
+      <Header align="center">Our Sponsors</Header>
       <SponsorsGrid>
         <DiamondTier />
         <PlatinumTier />
