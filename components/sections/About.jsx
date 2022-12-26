@@ -1,19 +1,21 @@
 import Image from "next/image";
 import { styled, css } from "~stitches";
 
-import { Body, Title } from "@components/atoms";
+import { Body, Title, Header } from "@components/atoms";
 
 import AboutUsImg from "@assets/AboutUs.webp";
 
 const Wrapper = styled('section', {
-  minHeight: "100vh",
   width: "100%",
   scrollMarginTop: "12vh",
+  marginBottom: "10rem",
 })
 
 const ContentWrapper = styled('div', css({
   display: 'flex',
   maxWidth: "1440px",
+  justifyContent: "center",
+  alignItems: "center",
   flexFlow: "row wrap",
   gap: "5vw",
   '@bp1': {
@@ -54,9 +56,12 @@ const TextWrapper = styled('div', css({
 export const About = (props) => {
   return(
     <Wrapper id="About">
-      <Title>About Us</Title>
       <ContentWrapper>
+        <ImageWrapper>
+          <Image src={AboutUsImg} layout="fill" objectFit='contain' alt="UofTHacks Friends" />
+        </ImageWrapper>
         <TextWrapper>
+      <Header>About Us</Header>
           <Body>
           Canada&apos;s first student-run hackathon, UofTHacks, is back for its 10th consecutive year on January 20-22, 2023!
           </Body>
@@ -67,9 +72,6 @@ export const About = (props) => {
           We strive to provide a space where hackers can discover their passions, and we want your support in helping these hackers shape the future!
           </Body>
         </TextWrapper>
-        <ImageWrapper>
-          <Image src={AboutUsImg} layout="fill" objectFit='contain' alt="UofTHacks Friends" />
-        </ImageWrapper>
       </ContentWrapper>
     </Wrapper>
   )
