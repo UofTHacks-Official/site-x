@@ -62,7 +62,7 @@ const HamburgerWrapper = styled("div", ({
 export const Navbar = (props) => {
   function changeNavBar(toggled) {
     if (toggled) {
-      document.getElementById("navbar").style.height = '250px';
+      document.getElementById("navbar").style.height = '180px';
       document.getElementById("mobile-links").style.display = 'flex';
     } else {
       document.getElementById("navbar").style.height = '80px';
