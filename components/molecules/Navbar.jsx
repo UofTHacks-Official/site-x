@@ -27,7 +27,7 @@ const Links = styled("div", css({
   flexDirection: "row",
   position: "absolute",
   height: "24px",
-  right: "245px",
+  right: "45px",
   top: "28px",
 }));
 
@@ -55,7 +55,7 @@ const LogoDiv = styled("div", ({
 
 const HamburgerWrapper = styled("div", ({
   position: 'absolute',
-  right: '124px',
+  right: '15px',
   top: '15px',
 }));
 
