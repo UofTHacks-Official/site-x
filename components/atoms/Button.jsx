@@ -60,8 +60,17 @@ export const ApplyButton = (props) => {
       },
   }));
 
+  const handleOpenPdf = () => {
+    fetch('UofTHacks11.pdf')
+      .then((res) => res.blob())
+      .then((blob) => {
+        const objectUrl = URL.createObjectURL(blob);
+        window.location.href = objectUrl;
+      });
+  };
+
   return (
     // <StyledApply href="https://apply.uofthacks.com/">Apply Now →</StyledApply>
-    <StyledApply href="/apply">Apply Now →</StyledApply>
+    <StyledApply href="#" onClick={handleOpenPdf}>Apply Now →</StyledApply>
   );
 };
