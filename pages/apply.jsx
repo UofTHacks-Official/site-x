@@ -16,13 +16,13 @@ function ViewRecruitmentPackage() {
   }, []);
 
   return (
-    <div style={{ width: width, height: height, maxWidth: "100%", maxHeight: "100%" }}>
+    <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", overflow: "scroll"}}>
       <object
         data="UofTHacks11.pdf"
         type="application/pdf"
         width={width}
         height={height}
-        style={{ maxWidth: "100%", height: "80vh", overflow: "scroll" }}
+        style={{ maxWidth: "100%", maxHeight: "100%", overflow: "scroll" }}
       >
         <p>
           Your browser does not support PDF viewing. Please download the PDF to
