@@ -16,7 +16,7 @@ function ViewRecruitmentPackage() {
   }, []);
 
   return (
-    <div style={{ width: "100%", height: "100%" }}>
+    <div style={{ width: width, height: height}}>
       <object
         data="UofTHacks11.pdf"
         type="application/pdf"
