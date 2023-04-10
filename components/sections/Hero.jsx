@@ -14,15 +14,16 @@ export const Hero = (props) => {
   return(
     <Wrapper>
       <Subtitle>
-        January 20-22, 2023&nbsp;&nbsp;|
+        TBD&nbsp;&nbsp;|
         <span
           style={{'color': '#DF7D7D'}}
         >
         &nbsp;&nbsp;Toronto, ON.
         </span>
       </Subtitle>
-      <DisplayText>UofTHacks X</DisplayText>
-      <Body size="large">Hacker applications are now closed. Thank you!<span style ={{fontSize: "1rem"}}></span></Body>
+      <DisplayText>UofTHacks 11</DisplayText>
+      <Body size="large">Interested in joining the organizing team?<span style ={{fontSize: "1rem"}}></span></Body>
+      <ApplyButton/>
       <Body><a href='mailto:sponsors@uofthacks.com' style={{color: "#ffff", "textDecoration": "underline"}}>Interested in sponsoring?</a></Body>
     </Wrapper>
   )

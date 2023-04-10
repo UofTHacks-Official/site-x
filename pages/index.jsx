@@ -11,7 +11,7 @@ import Stats from '@components/sections/Stats';
 export default function Home() {
   return (
     <>
-    <title>UofTHacks X</title>
+    <title>UofTHacks 11</title>
     <meta charSet="UTF-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta
@@ -19,15 +19,15 @@ export default function Home() {
             content="width=device-width, initial-scale=1.0"
           />
           <link rel="manifest" href="/site.webmanifest" />
-          <title>UofTHacks X</title>
-          <meta name="title" content="UofTHacks X" />
+          <title>UofTHacks 11</title>
+          <meta name="title" content="UofTHacks 11" />
           <meta
             name="description"
             content="Join 500+ hackers for a great weekend of learning, building, and networking at University of Toronto's largest annual hackathon 💻"
           />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://www.uofthacks.com/" />
-          <meta property="og:title" content="UofTHacks X Application" />
+          <meta property="og:title" content="UofTHacks 11 Application" />
           <meta
             property="og:description"
             content="Join 500+ hackers for a great weekend of learning, building, and networking at University of Toronto's largest annual hackathon 💻"
@@ -38,7 +38,7 @@ export default function Home() {
           />
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:url" content="https://www.uofthacks.com/" />
-          <meta property="twitter:title" content="UofTHacks X" />
+          <meta property="twitter:title" content="UofTHacks 11" />
           <meta
             property="twitter:description"
             content="Join 500+ hackers for a great weekend of learning, building, and networking at University of Toronto's largest annual hackathon 💻"
