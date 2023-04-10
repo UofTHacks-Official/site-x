@@ -1,5 +1,5 @@
 import React from "react";
-
+import { MainBackground } from "@components/atoms";
 function ViewRecruitmentPackage() {
   const [width, setWidth] = React.useState(0);
   const [height, setHeight] = React.useState(0);
@@ -16,13 +16,12 @@ function ViewRecruitmentPackage() {
   }, []);
 
   return (
-    <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", overflow: "scroll"}}>
+    
+    <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden"}}>
       <object
         data="UofTHacks11.pdf"
         type="application/pdf"
-        width={width}
-        height={height}
-        style={{ maxWidth: "100%", maxHeight: "100%", overflow: "scroll" }}
+        style={{ width: "80vw", height: "80vh", maxWidth: "100%", maxHeight: "100%", objectFit: "contain", overflow: "scroll" }}
       >
         <p>
           Your browser does not support PDF viewing. Please download the PDF to
@@ -34,6 +33,7 @@ function ViewRecruitmentPackage() {
       </object>
     </div>
   );
+  
 }
 
 export default ViewRecruitmentPackage;
