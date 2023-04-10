@@ -22,7 +22,7 @@ function ViewRecruitmentPackage() {
         type="application/pdf"
         width={width}
         height={height}
-        style={{ maxWidth: "100%", maxHeight: "100%" }}
+        style={{ maxWidth: "100%", height: "80vh", overflow: "scroll" }}
       >
         <p>
           Your browser does not support PDF viewing. Please download the PDF to
