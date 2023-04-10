@@ -14,13 +14,24 @@ function ViewRecruitmentPackage() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
   return (
-    <object
-      data="UofTHacks11.pdf"
-      type="application/pdf"
-      width={width}
-      height={height}
-    />
+    <div style={{ width: "100%", height: "100%" }}>
+      <object
+        data="UofTHacks11.pdf"
+        type="application/pdf"
+        width={width}
+        height={height}
+      >
+        <p>
+          Your browser does not support PDF viewing. Please download the PDF to
+          view it:{" "}
+          <a href="UofTHacks11.pdf" download>
+            Download PDF
+          </a>
+        </p>
+      </object>
+    </div>
   );
 }
 
