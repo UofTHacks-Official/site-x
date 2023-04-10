@@ -71,6 +71,6 @@ export const ApplyButton = (props) => {
 
   return (
     // <StyledApply href="https://apply.uofthacks.com/">Apply Now →</StyledApply>
-    <StyledApply href="#" onClick={handleOpenPdf}>Apply Now →</StyledApply>
+    <StyledApply onClick={handleOpenPdf}>Apply Now →</StyledApply>
   );
 };
