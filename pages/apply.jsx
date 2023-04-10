@@ -5,7 +5,7 @@ function ViewRecruitmentPackage() {
   return (
     <div>
       <MobileView>
-      <object data='some.pdf'>
+      <object data='UofTHacks11.pdf'>
         <a href="UofTHacks11.pdf">Download UofTHacks Recruitment Package!</a>
       </object>
       </MobileView>
