@@ -22,8 +22,10 @@ export const Hero = (props) => {
         </span>
       </Subtitle>
       <DisplayText>UofTHacks 11</DisplayText>
-      <Body size="large">Interested in joining the organizing team?<span style ={{fontSize: "1rem"}}></span></Body>
-      <ApplyButton/>
+      <Body size="large">Organizer Applications have now closed.<span style ={{fontSize: "1rem"}}></span></Body>
+      <Body size="large">Thank you so much for your interest in UofTHacks!<span style ={{fontSize: "1rem"}}></span></Body>
+      
+      {/* <ApplyButton/> */}
       <Body><a href='mailto:sponsors@uofthacks.com' style={{color: "#ffff", "textDecoration": "underline"}}>Interested in sponsoring?</a></Body>
     </Wrapper>
   )
