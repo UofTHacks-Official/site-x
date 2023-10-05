@@ -6,11 +6,11 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>UofTHacks 11</title>
+        <title>UofTHacks X</title>
       </Head>
       <Component {...pageProps} />
     </>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;

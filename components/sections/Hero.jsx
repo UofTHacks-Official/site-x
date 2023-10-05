@@ -1,32 +1,38 @@
 import { styled, css } from "~stitches";
 import { Subtitle, DisplayText, Body, ApplyButton } from "@components/atoms";
 
-const Wrapper = styled('div', {
+const Wrapper = styled("div", {
   display: "flex",
   paddingTop: "25vh",
   flexDirection: "column",
   minHeight: "100vh",
   width: "100%",
   zIndex: "10",
-})
+});
 
 export const Hero = (props) => {
-  return(
+  return (
     <Wrapper>
       <Subtitle>
-        TBD&nbsp;&nbsp;|
-        <span
-          style={{'color': '#DF7D7D'}}
-        >
-        &nbsp;&nbsp;Toronto, ON.
-        </span>
+        January 20-23, 2023&nbsp;&nbsp;|
+        <span style={{ color: "#DF7D7D" }}>&nbsp;&nbsp;Toronto, ON.</span>
       </Subtitle>
-      <DisplayText>UofTHacks 11</DisplayText>
-      <Body size="large">Organizer Applications have now closed.<span style ={{fontSize: "1rem"}}></span></Body>
-      <Body size="large">Thank you so much for your interest in UofTHacks!<span style ={{fontSize: "1rem"}}></span></Body>
-      
+      <DisplayText>UofTHacks X</DisplayText>
+      <Body size="large">
+        Thank you so much for participating in UofTHacks X <br />
+        See you all next year!
+        <span style={{ fontSize: "1rem" }}></span>
+      </Body>
+
       {/* <ApplyButton/> */}
-      <Body><a href='mailto:sponsors@uofthacks.com' style={{color: "#ffff", "textDecoration": "underline"}}>Interested in sponsoring?</a></Body>
+      <Body>
+        <a
+          href="mailto:sponsors@uofthacks.com"
+          style={{ color: "#ffff", textDecoration: "underline" }}
+        >
+          Interested in sponsoring?
+        </a>
+      </Body>
     </Wrapper>
-  )
-}
+  );
+};

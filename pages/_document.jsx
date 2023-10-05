@@ -1,27 +1,27 @@
-import NextDocument, { Html, Head, Main, NextScript } from 'next/document';
+import NextDocument, { Html, Head, Main, NextScript } from "next/document";
 import FilsonProMediumOtf from "public/fonts/FilsonProMedium.otf";
 import FilsonProMediumWoff from "public/fonts/FilsonProMedium.woff";
 import FilsonProMediumWoff2 from "public/fonts/FilsonProMedium.woff2";
 import PoppinsMedium from "public/fonts/Poppins-Medium.ttf";
 import PoppinsRegular from "public/fonts/Poppins-Regular.ttf";
 
-import { getCssText } from '~stitches';
+import { getCssText } from "~stitches";
 
 export default class Document extends NextDocument {
   render() {
     return (
-      <Html lang={'en'}>
+      <Html lang={"en"}>
         <Head>
           <meta charSet="UTF-8" />
           <link rel="manifest" href="/site.webmanifest" />
-          <meta name="title" content="UofTHacks 11" />
+          <meta name="title" content="UofTHacks X" />
           <meta
             name="description"
             content="Join 500+ hackers for a great weekend of learning, building, and networking at University of Toronto's largest annual hackathon 💻"
           />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://www.uofthacks.com/" />
-          <meta property="og:title" content="UofTHacks 11" />
+          <meta property="og:title" content="UofTHacks X" />
           <meta
             property="og:description"
             content="Join 500+ hackers for a great weekend of learning, building, and networking at University of Toronto's largest annual hackathon 💻"
@@ -32,7 +32,7 @@ export default class Document extends NextDocument {
           />
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:url" content="https://www.uofthacks.com/" />
-          <meta property="twitter:title" content="UofTHacks 11" />
+          <meta property="twitter:title" content="UofTHacks X" />
           <meta
             property="twitter:description"
             content="Join 500+ hackers for a great weekend of learning, building, and networking at University of Toronto's largest annual hackathon 💻"
@@ -80,7 +80,7 @@ export default class Document extends NextDocument {
           />
 
           <style
-            id={'stitches'}
+            id={"stitches"}
             dangerouslySetInnerHTML={{ __html: getCssText() }}
           />
         </Head>
