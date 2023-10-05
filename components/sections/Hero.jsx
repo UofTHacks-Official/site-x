@@ -14,7 +14,7 @@ export const Hero = (props) => {
   return (
     <Wrapper>
       <Subtitle>
-        January 20-23, 2023&nbsp;&nbsp;|
+        January 20-22, 2023&nbsp;&nbsp;|
         <span style={{ color: "#DF7D7D" }}>&nbsp;&nbsp;Toronto, ON.</span>
       </Subtitle>
       <DisplayText>UofTHacks X</DisplayText>
