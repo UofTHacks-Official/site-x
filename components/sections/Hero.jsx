@@ -19,8 +19,8 @@ export const Hero = (props) => {
       </Subtitle>
       <DisplayText>UofTHacks X</DisplayText>
       <Body size="large">
-        Thank you so much for participating in UofTHacks X <br />
-        See you all next year!
+        Thank you so much for participating in UofTHacks X. <br />
+        We can't wait to see you all again next year!
         <span style={{ fontSize: "1rem" }}></span>
       </Body>
 
